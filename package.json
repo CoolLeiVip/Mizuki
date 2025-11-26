@@ -20,6 +20,7 @@
 		"preinstall": "npx only-allow pnpm",
 		"compress-fonts": "node scripts/compress-fonts.js",
 		"test-font-compression": "node scripts/test-font-compression.js"
+		"postinstall": "npm rebuild --build-from-source"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.5",
@@ -74,6 +75,7 @@
 		"tailwindcss": "^3.4.18",
 		"typescript": "^5.9.3",
 		"unist-util-visit": "^5.0.0"
+		"ttf2woff2": "^4.0.5"
 	},
 	"devDependencies": {
 		"@astrojs/ts-plugin": "^1.10.5",
